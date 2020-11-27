@@ -13,25 +13,27 @@
 				<input type="text" placeholder="Add a Task">
 				<button>Add</button>
 			</div>
-
 			<ol class="notCompleted">
 				<h3>Not Completed</h3>
 			</ol>
-
 			<ol class="Completed">
 				<h3>Completed</h3>
 			</ol>
 	</div>
 
+	
+	
+	
 	<script>
 		const input = document.querySelector('input');
 		const btn = document.querySelector('.addTask');
-
+		
+		
+		
 		btn.addEventListener('click', addList);
 		input.addEventListener('keyup', (e)=>{
 			(e.keyCode === 13 ? addList(e) : null);
 		})
-
 		function addList(e){
 			const notCompleted = document.querySelector('.notCompleted');
 			const Completed = document.querySelector('.Completed');
